@@ -7,7 +7,7 @@ import type { Plugin } from "vite";
  */
 export default function togglableConsoleVitePlugin(opts: { strip?: boolean } = {}): Plugin {
   return {
-    name: "togglable-console-vite",
+    name: "universal-consolejs-vite",
     enforce: "post",
     transform(code, id) {
       if (!opts.strip) return null;

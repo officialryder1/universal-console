@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { disableConsole, enableConsole, initConsole, logOnce, resetConsoleState, isDisabled } from "../src";
+import { vi } from "vitest";
 
-describe("togglable-console", () => {
+describe("universal-consolejs", () => {
   beforeEach(() => {
     resetConsoleState();
   });

@@ -1,6 +1,6 @@
 # Universal Console
 
-[![npm version](https://badge.fury.io/js/universal-console.svg)](https://www.npmjs.com/package/universal-console)
+[![npm version](https://badge.fury.io/js/universal-consolejs.svg)](https://www.npmjs.com/package/universal-consolejs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A smart console wrapper that automatically disables console methods in production and enables them in development. Perfect for keeping your production environment clean while maintaining debugging capabilities during development.
@@ -18,33 +18,33 @@ A smart console wrapper that automatically disables console methods in productio
 ## Installation
 
 ```bash
-npm install universal-console
+npm install universal-consolejs
 # or
-yarn add universal-console
+yarn add universal-consolejs
 
 ##Usage
 
 ### Automatic init (NODE_ENV)
 ```js
-import { initConsole } from 'universal-console'
+import { initConsole } from 'universal-consolejs'
 initConsole(); # will disable if NODE_ENV === 'production'
 
 ### Manuel toggle
-import { disableConsole, enableConsole } from "universal-console";
+import { disableConsole, enableConsole } from "universal-consolejs";
 disableConsole({ allow: ['error','warn'] });
 enableConsole();
 
 ### LogOnce
-import { logOnce } from "universal-console";
+import { logOnce } from "universal-consolejs";
 logOnce('unique-key', 'warn', 'This prints once');
 
 ### Temporarily enable
-import { withConsole } from "togglable-console";
+import { withConsole } from "universal-consolejs";
 await withConsole(async () => {
   console.log('visible even if disabled');
 });
 
 ### CLI
-npx universal-console off
-npx universal-console on
-npx universal-console reset
+npx universal-consolejs off
+npx universal-consolejs on
+npx universal-consolejs reset

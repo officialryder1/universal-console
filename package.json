@@ -1,11 +1,11 @@
 {
-  "name": "universal-console",
+  "name": "universal-consolejsjs",
   "version": "1.0.0",
   "description": "Runtime toggle to disable/enable console.* globally (browser + node). Supports allow-lists, logOnce, temporary enabling, CLI and plugin skeletons.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "universal-console": "dist/cli.js"
+    "universal-consolejs": "dist/cli.js"
   },
   "files": [
     "dist"
@@ -22,7 +22,7 @@
     "production",
     "debug",
     "logging",
-    "universal-console"
+    "universal-consolejs"
   ],
   "author": "Officialryder",
   "license": "MIT",
